@@ -172,3 +172,105 @@ h1 {
     color: #fff;
     border-radius: 20px;
 }
+
+/* Footer desafio */
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(90deg, #FF14C4 0%, #B351FF 50%, #349CFD 100%);
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+
+.prom-container {
+    margin: 25px;
+    padding-bottom: 14px;
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+}
+
+.prom-container h3 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.prom-container p {
+    font-size: 16px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto; /* Empurra o btn-container para a direita */
+    margin-right: 25px; /* Adiciona uma margem à direita para espaçamento */
+}
+
+.btn-container .btn-inscrevase {
+    font-family: "DM Sans", sans-serif;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    color: #000;
+    font-weight: bold;
+    height: 40px;
+    width: 170px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 20px;
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    footer {
+        height: auto; /* Altura automática para se ajustar ao conteúdo */
+        flex-direction: column; /* Altera a direção do flex para coluna */
+        padding: 20px 0; /* Adiciona um espaçamento interno */
+    }
+
+    .prom-container {
+        text-align: center; /* Centraliza o texto */
+        margin: 10px 0; /* Reduz a margem */
+    }
+
+    .prom-container h3 {
+        font-size: 18px; /* Reduz o tamanho da fonte */
+    }
+
+    .prom-container p {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    .btn-container {
+        margin: 10px auto; /* Centraliza o btn-container */
+        align-items: center; /* Centraliza os botões */
+    }
+
+    .btn-container .btn-inscrevase {
+        width: 140px; /* Reduz a largura do botão */
+        height: 35px; /* Reduz a altura do botão */
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+}
+
+/* Responsividade para telas menores que 480px */
+@media (max-width: 480px) {
+    
+    .prom-container h3 {
+        font-size: 16px; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    .prom-container p {
+        font-size: 12px; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    .btn-container .btn-inscrevase {
+        width: 120px; /* Reduz a largura do botão */
+        height: 30px; /* Reduz a altura do botão */
+        font-size: 12px; /* Reduz o tamanho da fonte */
+    }
+}
